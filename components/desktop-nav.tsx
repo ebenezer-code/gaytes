@@ -30,7 +30,7 @@ export default function DesktopNav({
             <button
               key={section}
               onClick={() => scrollToSection(section)}
-              className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
+              className={`px-3 py-2 cursor-pointer rounded-md text-sm font-medium transition-all duration-300 ${
                 activeSection === section
                   ? "text-blue-600 bg-blue-600/10"
                   : `${textSecondaryClass} hover:${textClass}`

@@ -24,9 +24,9 @@ export default function Footer({
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h4
-              className={`text-xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent`}
+              className={`text-xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent`}
             >
-              NexaCorp
+              Gaytes
             </h4>
             <p className={`${textSecondaryClass} text-sm`}>
               Transforming ideas into reality with cutting-edge technology.
@@ -35,11 +35,11 @@ export default function Footer({
           <div>
             <h5 className={`${textClass} font-semibold mb-3`}>Company</h5>
             <div className="space-y-2">
-              {["about", "careers", "contact"].map((section) => (
+              {["about", "contact"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className={`block ${textSecondaryClass} hover:text-purple-600 text-sm transition-colors`}
+                  className={`block cursor-pointer ${textSecondaryClass} hover:text-blue-600 text-sm transition-colors`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
@@ -53,7 +53,7 @@ export default function Footer({
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className={`block ${textSecondaryClass} hover:text-purple-600 text-sm transition-colors`}
+                  className={`block cursor-pointer ${textSecondaryClass} hover:text-blue-600 text-sm transition-colors`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
@@ -63,14 +63,14 @@ export default function Footer({
           <div>
             <h5 className={`${textClass} font-semibold mb-3`}>Connect</h5>
             <p className={`${textSecondaryClass} text-sm mb-2`}>
-              hello@nexacorp.com
+              franke.gaytes@gmail.com
             </p>
-            <p className={`${textSecondaryClass} text-sm`}>+1 (555) 123-4567</p>
+            <p className={`${textSecondaryClass} text-sm`}>+2347055535872</p>
           </div>
         </div>
         <div className="text-center pt-8 border-t border-white/10">
           <p className={textSecondaryClass}>
-            © 2025 NexaCorp. All rights reserved.
+            © 2025 GaytesSolution. All rights reserved.
           </p>
         </div>
       </div>
