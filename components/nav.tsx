@@ -1,5 +1,6 @@
 import DesktopNav from "@/components/desktop-nav";
 import MobileNav from "@/components/mobile-nav";
+import Image from "next/image";
 interface NavProps {
   textSecondaryClass: string;
   textClass: string;
@@ -38,15 +39,23 @@ export default function Nav({
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center">
-            <span
-              className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent cursor-pointer"
-              onClick={() => scrollToSection("home")}
-            >
+          <div
+            className="flex items-center cursor-pointer gap-2"
+            onClick={() => scrollToSection("home")}
+          >
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-900 bg-clip-text text-transparent">
               Gaytes
             </span>
+            <div className="relative w-10 h-10">
+              <Image
+                src="/logo.png"
+                alt="Gaytes Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
-
           {/* Desktop Navigation */}
           <DesktopNav
             activeSection={activeSection}
@@ -58,7 +67,6 @@ export default function Nav({
             darkMode={darkMode}
             setDarkMode={setDarkMode}
           />
-
           {/* Mobile menu button */}
           <MobileNav
             activeSection={activeSection}

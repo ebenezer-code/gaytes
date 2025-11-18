@@ -8,11 +8,8 @@ import Support from "@/components/support";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Nav from "@/components/nav";
-import img1 from "@/public/one.jpeg";
-import img2 from "@/public/one1.jpeg";
-import img3 from "@/public/one2.jpeg";
-import img4 from "@/public/two.jpeg";
-import img5 from "@/public/ten.jpeg";
+import img1 from "@/public/slide.jpeg";
+import img2 from "@/public/slide1.jpeg";
 
 export default function CompanySPA() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +23,7 @@ export default function CompanySPA() {
   });
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const slides = [img1, img2, img3, img4, img5];
+  const slides = [img1, img2];
 
   const sections = [
     "home",

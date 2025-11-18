@@ -114,6 +114,21 @@ export default function About({
             Centers – Asterisk Conference and IP Telephony.
           </p>
         </div>
+        <div
+          className={`${cardBgClass} backdrop-blur-sm rounded-2xl p-8 md:p-12 border mt-10`}
+        >
+          <h3 className={`text-3xl font-bold ${textClass} mb-6`}>
+            Our Partners
+          </h3>
+          <p className={`${textSecondaryClass} text-lg leading-relaxed mb-4`}>
+            GAYTES information private Ltd, 511, "SAKAR-V" , Mithakhali
+            Navrangpura, Ahmedabad -380 009.India.
+          </p>
+          <p className={`${textSecondaryClass} text-lg leading-relaxed`}>
+            HUNE : Keyu Intelligence co Ltd. Xinhui District ,Jiangmen City,
+            Guangdong .China
+          </p>
+        </div>
       </div>
     </section>
   );

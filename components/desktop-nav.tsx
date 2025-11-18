@@ -47,9 +47,9 @@ export default function DesktopNav({
         className={`p-2 rounded-lg ${cardBgClass} border transition-all hover:scale-110 ml-2`}
       >
         {darkMode ? (
-          <Sun size={20} className="text-yellow-400" />
+          <Sun size={20} className="text-yellow-400 cursor-pointer" />
         ) : (
-          <Moon size={20} className="text-purple-600" />
+          <Moon size={20} className="text-purple-600 cursor-pointer" />
         )}
       </button>
     </div>

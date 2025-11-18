@@ -118,14 +118,20 @@ export default function Contact({
               { icon: Mail, title: "Email", info: "franke.gaytes@gmail.com" },
               {
                 icon: Phone,
-                title: "Phone",
-                info: "+234 705 553 5872",
+                title: "Mobile",
+                info: "+2348037586338",
+                href: "tel:+2348037586338",
+              },
+              {
+                icon: Phone,
+                title: "Whatapp",
+                info: "+2347055535872",
                 href: "tel:+2347055535872",
               },
               {
                 icon: MapPin,
                 title: "Location",
-                info: "5 Adegbeyeni St, Allen 101233, Ikeja, Lagos, Nigeria",
+                info: "2/f , N0 5 Adegbeyemi st, oof Allen Avenue ,Ikeja .Lagos ",
               },
             ].map((item, idx) => (
               <div
